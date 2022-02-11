@@ -50,6 +50,7 @@
         <input type="text" id="Username" name="Username"><br>
         <label for="Password"> Password:</label><br>
         <input type="text" id="Password" name="Password"><br>
+        <input type="submit"><br>
     </form>
 </body>
 </html>
