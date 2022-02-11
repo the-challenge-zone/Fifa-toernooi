@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styleet/stylesheet.css">
+    <title>Login</title>
 </head>
 <body>
-<nav>
+    <nav>
         <!--ID"navbar" is de menubalk-->
         <div class="row justify-content-left" id="navbar">
                     <!--de afbeelding voor aan de menubalk-->
@@ -24,5 +25,30 @@
                     <div class="col-2"><center><a href="./">Erebezoekers</a></center></div>
                 </div>
     </nav>
+<h1 align="center">Login</h1>
+    <form align="center">
+        <label for="Username">Username:</label><br>
+        <input type="text" id="Username" name="Username"><br>
+        <label for="Password"> Password:</label><br>
+        <input type="text" id="Password" name="Password"><br>
+    </form>
 </body>
 </html>
+
+<?php   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>
