@@ -1,3 +1,21 @@
+<?php   
+
+
+include('Database_inc.php');
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,20 +72,3 @@
 </body>
 </html>
 
-<?php   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
