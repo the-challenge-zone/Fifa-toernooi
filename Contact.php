@@ -83,8 +83,8 @@
                 <p>
                 
                 </br>
-                    <b> &nbsp; Naam: </b>Kevin Smlatić</br>
-                    <b> &nbsp; Email: </b>211690@vistacollege.nl</br>
+                    <b> &nbsp; Naam: </b>Dylan Mulders</br>
+                    <b> &nbsp; Email: </b>401311@vistacollege.nl</br>
                     <b> &nbsp; Telefoon nummer: </b>040404040 </br>
                     <b> &nbsp; adress: </b>Valkenburgerweg 148, 6419 AW Heerlen
                     <iframe style="width: 70%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7120.34798850613!2d5.95707769862366!3d50.87887774976183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0bdc7aa05ae5b%3A0xb9026263fa8e0a1f!2sVISTA%20college!5e0!3m2!1snl!2snl!4v1639126969258!5m2!1snl!2snl"
