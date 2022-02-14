@@ -94,8 +94,7 @@
                         <a href=""> <img width='8%' src="./Image/Face_Logo.PNG"> </a>
                         <a href=""> <img width='8%' src="./Image/Git_Logo.JPG"> </a>
 
-    </div>
-    </div
-</body>
-<
-</html>
+                    </div>
+                </div>
+
+<?php include('Footer.php')?>
