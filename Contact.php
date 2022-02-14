@@ -113,18 +113,10 @@
                 </div>
             </div>
         </div>
-    </section>
-                    
-                <p>
-                
-                </br>
-                    <b> &nbsp; Naam: </b>Dylan Mulders</br>
-                    <b> &nbsp; Email: </b>401311@vistacollege.nl</br>
-                    <b> &nbsp; Telefoon nummer: </b>040404040 </br>
-                   
-             
-
-
-                
+    </section>                
 
 <?php include('Footer.php')?>
+<!--https://codepen.io/baahubali92/pen/jXXxeG
+contact form : Anup Kuma
+license.txt if te open lifens that is linkt to the Contact.php
+-->
