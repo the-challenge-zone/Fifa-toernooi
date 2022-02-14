@@ -1,3 +1,4 @@
+<php
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +35,7 @@
                     <!--de rest van de menubalk-->
                     <div class="col-1"><center><a href="./index.php" class="selected">Home</a></center></div>         
                     <div class="col-1"><center><a href="./">Informatie</a></center></div>
-                    <div class="col-1"><center><a href="./Contact.php">Contact</a></center></div>
+                    <div class="col-1"><center><a href="./">Contact</a></center></div>
                     <div class="col-1"><center><a href="./">Erebezoekers</a></center></div>
                     <div class="flex-grow-1 row justify-content-center">
                         <div class="col-1"><center><a href="./login.php">Login</a></center></div>
@@ -43,5 +44,54 @@
                    
                 </div>
     </nav>
+    <title>Contact</title>
+    <div class ='d-flex justify-content-around'>
+    <h2>lets get in touch</h2>
+        
+                
+        </div>
+               
+       <div class='Container'>
+       <div class ='d-flex justify-content-around'>
+       
+              
+       <form action="/action_page.php">
+    <div class=col-md-5>
+
+        <label for="fname">Username:</label><br>
+        <input type="text" id="sName" name="fname" value="jou naam"><br>
+        <label for="Email">Email:</label><br>
+        <input type="email" id="sEmail" name="lname" value="uw Email"><br>
+        <label for="sTel">onderwerp:</label><br>
+        <input type="sTel" id="sTel" name="lname" value="subject"><br>
+        <label for="sTel">Telefoon:</label><br>
+        <input type="sTel" id="sTel" name="lname" value="Telefoon"><br>
+        
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-5">
+        <label for="sMessage">Uw bericht</label><br>
+        <textarea name="sMessage" style=" width:400px; height: 140px;"></textarea>
+    </div>
+    <br>
+    <div class="col-md-12">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+                    
+                <p>
+                
+                </br>
+                    <b> &nbsp; Naam: </b>lorus insum </br>
+                    <b> &nbsp; Adress: </b> looroor</br>
+                    <b> &nbsp; Email: </b>lololol@lololol  </br>
+                    <b> &nbsp; Telefoon nummer: </b>040404040 </br>
+                    <b> &nbsp; adress: </b>someplace </br>
+                    <a href=""> <img width="8%" src="./Image/Link_Logo.PNG"> </a> 
+                        <a href=""> <img width='8%' src="./Image/Face_Logo.PNG"> </a>
+                        <a href=""> <img width='8%' src="./Image/Git_Logo.JPG"> </a>
+
+    </div>
 </body>
+<
 </html>
