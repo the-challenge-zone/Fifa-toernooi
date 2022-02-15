@@ -62,7 +62,6 @@ include('Database_inc.php');
                     <div class="flex-grow-1 row justify-content-center">
                         <div class="col-1"><center><a href="./login.php">Login</a></center></div>
                     </div>
-                   
                 </div>
     </nav>
     <!--Start Login -->
