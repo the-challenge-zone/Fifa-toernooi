@@ -1,9 +1,9 @@
 <?php
 function connectToDB(){
     $Hostname =         "127.0.0.1"; // the adres for the host adress
-    $DBname =            "musiclibrary"; // the  database Name
-    $Username=            "PhpUser"; // the username for the user
-    $Password=   "CEZldWe7k5vm"; //the Generated password
+    $DBname =            ""; // the  database Name
+    $Username=            ""; // the username for the user
+    $Password=   ""; //the Generated password
 
     $oDbConnection= new PDO("mysql:host=$Hostname; dbname=$DBname", $Username, $Password);
     // Create the actual connection
