@@ -80,6 +80,9 @@ include('Database._inc.php');
                 <input type="text" class="form-control" name="FullName" placeholder="Full Name">
                 </div>
                 <div class="form-group">
+                <input type="text" class="form-control" name="Email" placeholder="Email">
+                </div>
+                <div class="form-group">
                 <input type="text" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
