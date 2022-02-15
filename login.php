@@ -81,7 +81,7 @@ include('Database_inc.php');
                 <input type="text" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
-                <button type="button" class="btn btn-primary btn-lg btn-block">Login</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Login</button>
                 </div>
                 <div class="form-group Signup">
                     <a href="#">Sign Up</a>
