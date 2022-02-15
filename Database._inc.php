@@ -1,9 +1,9 @@
 <?php
 function connectToDB(){
     $Hostname =         "127.0.0.1"; // the adres for the host adress
-    $DBname =            ""; // the  database Name
-    $Username=            ""; // the username for the user
-    $Password=   ""; //the Generated password
+    $DBname =            "fifa_toernooi"; // the  database Name
+    $Username=            "Admin"; // the username for the user
+    $Password=   "Admin"; //the Generated password
 
     $oDbConnection= new PDO("mysql:host=$Hostname; dbname=$DBname", $Username, $Password);
     // Create the actual connection
