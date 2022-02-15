@@ -26,6 +26,9 @@ include('Database_inc.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Login</title>
     <link rel="stylesheet" href="./CSS/stylesheet.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" 
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
@@ -64,14 +67,37 @@ include('Database_inc.php');
                 </div>
     </nav>
     <!--Start Login -->
-<h1 align="center">Login</h1>
-    <form align="center">
-        <label for="Username">Username:</label><br>
-        <input type="text" id="Username" name="Username"><br>
-        <label for="Password"> Password:</label><br>
-        <input type="text" id="Password" name="Password"><br>
-        <input type="submit"><br>
-    </form>
+    <div class="row justify-content-center">
+        <div class="container login-container">
+        <div class="row">
+            <div class="col-md-6 login-form">
+            <div class="profile-img">
+                <img src="./Image/user.png" alt="profile_img" height="140px" width="140px;">
+            </div>
+            <h3>Login</h3>
+            <form>
+                <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                <input type="text" class="form-control" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Sign In</button>
+                </div>
+                <div class="form-group forget-password">
+                    <a href="#">Forget Password</a>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
+<?php include('Footer.php')?>
+<!--https://codepen.io/baahubali92/pen/jXXxeG
+contact form : Anup Kuma
+license.txt if te open lifens that is linkt to the Contact.php
+-->
 

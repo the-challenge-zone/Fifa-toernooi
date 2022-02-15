@@ -45,3 +45,8 @@
     </nav>
 </body>
 </html>
+<?php include('Footer.php')?>
+<!--https://codepen.io/baahubali92/pen/jXXxeG
+contact form : Anup Kuma
+license.txt if te open lifens that is linkt to the Contact.php
+-->
