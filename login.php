@@ -61,13 +61,11 @@ include('Database_inc.php');
                     <div class="col-1"><center><a href="./">Erebezoekers</a></center></div>
                     <div class="flex-grow-1 row justify-content-center">
                         <div class="col-1"><center><a href="./login.php">Login</a></center></div>
-                        <div class="col-2"><center><a href="./">Sign Up</a></center></div>
                     </div>
                    
                 </div>
     </nav>
     <!--Start Login -->
-    <div class="row justify-content-center">
         <div class="container login-container">
         <div class="row">
             <div class="col-md-6 login-form">
@@ -83,7 +81,10 @@ include('Database_inc.php');
                 <input type="text" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
-                <button type="button" class="btn btn-primary btn-lg btn-block">Sign In</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block">Login</button>
+                </div>
+                <div class="form-group Signup">
+                    <a href="#">Sign Up</a>
                 </div>
                 <div class="form-group forget-password">
                     <a href="#">Forget Password</a>
@@ -92,7 +93,6 @@ include('Database_inc.php');
             </div>
         </div>
         </div>
-    </div>
 </body>
 </html>
 <?php include('Footer.php')?>
