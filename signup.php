@@ -88,12 +88,6 @@ include('Database._inc.php');
                 <div class="form-group">
                 <button type="button" class="btn btn-secondary btn-lg btn-block">create an account</button>
                 </div>
-                <div class="form-group Signup">
-                    <a href="./signup.php">Sign Up</a>
-                </div>
-                <div class="form-group forget-password">
-                    <a href="#">Forget Password</a>
-                </div>
             </form>
             </div>
         </div>
