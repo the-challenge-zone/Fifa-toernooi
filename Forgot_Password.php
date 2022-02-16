@@ -57,7 +57,7 @@ include('Database._inc.php');
                     <!--de rest van de menubalk-->
                     <div class="col-1"><center><a href="./index.php" class="selected">Home</a></center></div>         
                     <div class="col-1"><center><a href="./">Informatie</a></center></div>
-                    <div class="col-1"><center><a href="./">Contact</a></center></div>
+                    <div class="col-1"><center><a href="./Contact.php">Contact</a></center></div>
                     <div class="col-1"><center><a href="./">Erebezoekers</a></center></div>
                     <div class="flex-grow-1 row justify-content-center">
                         <div class="col-1"><center><a href="./login.php">Login</a></center></div>
