@@ -52,7 +52,7 @@
                          width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe></li>
                                 <li><i class="far fa-envelope"></i>401311@vistacollege.nl</li>
                                 <li><i class="far fa-envelope"></i>Dylan Mulders</li>
-                                <li><i class="fas fa-phone"></i>1-234-567-890 <br> 1-234-567-890</li>
+                                <li><i class="fas fa-phone"></i>0618465673</li>
                             </ul>
                             <ul class="social-icon-four">
                                 <li class="follow">Follow on: </li>
