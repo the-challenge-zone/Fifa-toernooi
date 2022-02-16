@@ -71,22 +71,22 @@ include('Database._inc.php');
             <div class="profile-img">
                 <img src="./Image/user.png" alt="profile_img" height="140px" width="140px;">
             </div>
-            <h3>Login</h3>
+            <h3>Sign Up</h3>
             <form>
                 <div class="form-group">
                 <input type="text" class="form-control" name="username" placeholder="Username">
                 </div>
                 <div class="form-group">
+                <input type="text" class="form-control" name="FullName" placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                <input type="text" class="form-control" name="Email" placeholder="Email">
+                </div>
+                <div class="form-group">
                 <input type="text" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
-                <button type="button" class="btn btn-secondary btn-lg btn-block">Login</button>
-                </div>
-                <div class="form-group Signup">
-                    <a href="./signup.php">Sign Up</a>
-                </div>
-                <div class="form-group forget-password">
-                    <a href="./Forgot_Password.php">Forget Password</a>
+                <button type="button" class="btn btn-secondary btn-lg btn-block">create an account</button>
                 </div>
             </form>
             </div>
@@ -99,4 +99,3 @@ include('Database._inc.php');
 contact form : Anup Kuma
 license.txt if te open lifens that is linkt to the Contact.php
 -->
-

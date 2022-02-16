@@ -39,7 +39,6 @@
                     <div class="col-1"><center><a href="./">Erebezoekers</a></center></div>
                     <div class="flex-grow-1 row justify-content-center">
                         <div class="col-1"><center><a href="./login.php">Login</a></center></div>
-                        <div class="col-2"><center><a href="./">Sign Up</a></center></div>
                     </div>
                    
                 </div>
@@ -74,7 +73,7 @@
                                             <input type="text" name="phone" value="" placeholder="Phone" required>
                                         </div>
                                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
-                                            <textarea name="message" placeholder="Massage"></textarea>
+                                            <textarea name="message" placeholder="Message"></textarea>
                                         </div>
                                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
                                             <button type="submit" class="theme-btn btn-style-one">Send Now</button>
@@ -116,6 +115,7 @@
     </section>                
 
 <?php include('Footer.php')?>
+</html>
 <!--https://codepen.io/baahubali92/pen/jXXxeG
 contact form : Anup Kuma
 license.txt if te open lifens that is linkt to the Contact.php
