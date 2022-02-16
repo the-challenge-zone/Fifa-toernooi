@@ -1,17 +1,6 @@
 <?php
 
 function sendMail() {
-  // if the user is not accessing this page through
-  // a form, then we don't need to do anything
-  /*
-  if (!isset($_POST["submit"])) {
-    // return the user to the contact page
-    // header("Location: Contact.php");
-    echo "No submit detected";
-    return;
-  }
-  */
-
   // hard-coded receiptant
   $to = "211252@vistacollege.nl";
   $subject = "";
@@ -21,24 +10,19 @@ function sendMail() {
   // the subject
   if (isset($_POST["name"])) {
     $subject .= "Name: " . $_POST["name"] . "\n";
-  }
+  } else return;
 
   // if the user has filled in an email, concat the email
   // to the subject
   if (isset($_POST["email"])) {
     $subject .= "Email: " . $_POST["email"] . "\n";
-  }
+  } else return;
 
   // if the user has filled in a message, concat the
   // message to the message
   if (isset($_POST["message"])) {
     $msg .= $_POST["message"] . "\n";
-  }
-
-  // set misc e-mail headers
-  $headers = [
-    "From: " . $_POST["email"] . "\r\n"
-  ];
+  } else return;
 
   // send the mail, and check for errors
   $hasMailed = mail(
@@ -62,3 +46,5 @@ function sendMail() {
 sendMail();
 
 ?>
+
+<img src="https://c.tenor.com/OGrH1Ge8AmEAAAAC/shrek-bright-eyes.gif">
