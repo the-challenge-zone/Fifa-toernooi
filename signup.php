@@ -58,7 +58,6 @@ include('Database._inc.php');
                     <div class="col-1"><center><a href="./index.php" class="selected">Home</a></center></div>         
                     <div class="col-1"><center><a href="./">Informatie</a></center></div>
                     <div class="col-1"><center><a href="./contact.php">Contact</a></center></div>
-                    <div class="col-1"><center><a href="./">Erebezoekers</a></center></div>
                     <div class="flex-grow-1 row justify-content-center">
                         <div class="col-1"><center><a href="./login.php">Login</a></center></div>
                     </div>
