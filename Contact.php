@@ -36,7 +36,6 @@
                     <div class="col-1"><center><a href="./index.php" class="selected">Home</a></center></div>         
                     <div class="col-1"><center><a href="./">Informatie</a></center></div>
                     <div class="col-1"><center><a href="./">Contact</a></center></div>
-                    <div class="col-1"><center><a href="./">Erebezoekers</a></center></div>
                     <div class="flex-grow-1 row justify-content-center">
                         <div class="col-1"><center><a href="./login.php">Login</a></center></div>
                     </div>
@@ -104,7 +103,7 @@
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                 <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="https://www.instagram.com/vista_esports_cup/"><i class="fab fa-pinterest-p"></i></a></li>
                             </ul>
                         </div>
                     </div>
