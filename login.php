@@ -1,22 +1,6 @@
 <?php   
-
-
-
 include('Database._inc.php');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+include('head.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,24 +29,6 @@ include('Database._inc.php');
    
 </head>
 <body>
-    <nav>
-        <!--ID"navbar" is de menubalk-->
-        <div class="row justify-content-left" id="navbar">
-                    <!--de afbeelding voor aan de menubalk-->
-                    <div class="col-2">
-                        <center>
-                            <img src="./Image/Logo.jpg" width="50%"/>
-                        </center>
-                    </div>
-                    <!--de rest van de menubalk-->
-                    <div class="col-1"><center><a href="./index.php" class="selected">Home</a></center></div>         
-                    <div class="col-1"><center><a href="./">Informatie</a></center></div>
-                    <div class="col-1"><center><a href="./contact.php">Contact</a></center></div>
-                    <div class="flex-grow-1 row justify-content-center">
-                        <div class="col-1"><center><a href="./login.php">Login</a></center></div>
-                    </div>
-                </div>
-    </nav>
     <!--Start Login -->
         <div class="container login-container">
         <div class="row">
