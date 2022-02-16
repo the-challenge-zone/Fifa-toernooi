@@ -37,7 +37,7 @@
         <a class="nav-link" href="#">information</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="Contact.php">contact us</a>
       </li>
     </ul>
     <ul class="navbar-nav mr-auto">
