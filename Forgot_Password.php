@@ -30,6 +30,9 @@ include('head.php');
 </head>
 <body>
     <!--Start Login -->
+
+    <!--Start Password forgot form -->
+
         <div class="container login-container">
         <div class="row">
             <div class="col-md-6 login-form">
