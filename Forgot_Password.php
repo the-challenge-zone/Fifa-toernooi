@@ -64,7 +64,7 @@ include('Database._inc.php');
                     </div>
                 </div>
     </nav>
-    <!--Start Login -->
+    <!--Start Password forgot form -->
         <div class="container login-container">
         <div class="row">
             <div class="col-md-6 login-form">
