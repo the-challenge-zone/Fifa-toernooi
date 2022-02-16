@@ -103,7 +103,7 @@
                                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                 <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="https://www.instagram.com/vista_esports_cup/"><i class="fab fa-pinterest-p"></i></a></li>
                             </ul>
                         </div>
                     </div>

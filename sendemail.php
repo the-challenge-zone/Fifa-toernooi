@@ -1,6 +1,6 @@
 <?php
 
-function sendMail() {
+(function () {
   // hard-coded receiptant
   $to = "211252@vistacollege.nl";
   $subject = "";
@@ -41,10 +41,9 @@ function sendMail() {
 
   // if there were errors, we need to display them
   echo "Something went wrong. Please try again later.";
-}
-
-sendMail();
+})();
 
 ?>
 
 <img src="https://c.tenor.com/OGrH1Ge8AmEAAAAC/shrek-bright-eyes.gif">
+<!--https://www.phpflow.com/php/how-to-send-email-from-localhost-using-php/ check instructions if hosting is known -->
