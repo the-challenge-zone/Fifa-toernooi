@@ -2,7 +2,7 @@
 
 (function () {
   // hard-coded receiptant
-  $to = "211252@vistacollege.nl";
+  $to = "@vistacollege.nl";
   $subject = "";
   $msg = "";
 
