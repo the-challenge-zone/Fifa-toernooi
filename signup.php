@@ -21,7 +21,7 @@ if($bSucces){
 }
 
 };
-
+//INSERT INTO `users` (`ID`, `sUsername`, `sFirstname`, `sSurname`, `sEmail`, `ePassword`, `DateOfCreation`) VALUES (NULL, 'test', 'test', 'test', 'test@test', 'test', current_timestamp());//
 
 
 
