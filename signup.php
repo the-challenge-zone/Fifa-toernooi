@@ -12,9 +12,9 @@ $sEmail = checkpost('email');
 $ePassword = password_hash(checkpost('password'),PASSWORD_DEFAULT);
 
 //store the userdata to userdatabase
-$sql = "INSERT INTO `users`(`ID`,`sUsername`)"
+$sql = "INSERT INTO `users`(`ID`,`sUsername`)";
 
-}
+};
 
 
 
