@@ -1,25 +1,34 @@
 <?php
-// bootstrap.php
-use Doctrine\ORM\Tools\Setup;
-use Doctrine\ORM\EntityManager;
+function connectToDB(){
+    $Hostname =         "127.0.0.1"; // the adres for the host adress
+    $DBname =            "fifa_toernooi"; // the  database Name
+    $Username=            "Admin"; // the username for the user
+    $Password=   "Admin"; //the Generated password
 
-require_once "vendor/autoload.php";
+    $oDbConnection= new PDO("mysql:host=$Hostname; dbname=$DBname", $Username, $Password);
+    // Create the actual connection
+    $oDbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    //$ODbConnection(Sql);
+    //
+    return($oDbConnection);
+}// close function
+// Methode: Execute a SQL query and return the fetched data in an array
+// @parameters: $sPdoQue type: string, scope: member
+function PdoSqlReturnArray($sPdoQuery){
+    $DBconnect = connectToDB(); // Connect to the MySQL database
+    $statement = $DBconnect->prepare($sPdoQuery); // Make the query with the parameter(s)
+    $aResult = $statement->execute(); // Execute the query and put the results in the $aResult
+    $arr_rows = $statement->fetchAll(PDO::FETCH_ASSOC); // Put all fetched data into a nested array
+    $DBconnect=NULL; // Close the connection
+    return($arr_rows); // Return the array data back to the calling method
+}
 
-// Create a simple "default" Doctrine ORM configuration for Annotations
-$isDevMode = true;
-$proxyDir = null;
-$cache = null;
-$useSimpleAnnotationReader = false;
-$config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src"), $isDevMode, $proxyDir, $cache, $useSimpleAnnotationReader);
-// or if you prefer yaml or XML
-// $config = Setup::createXMLMetadataConfiguration(array(__DIR__."/config/xml"), $isDevMode);
-// $config = Setup::createYAMLMetadataConfiguration(array(__DIR__."/config/yaml"), $isDevMode);
-
-// database configuration parameters
-$conn = array(
-    'driver' => 'pdo_sqlite',
-    'path' => __DIR__ . '/db.sqlite',
-);
-
-// obtaining the entity manager
-$entityManager = EntityManager::create($conn, $config);
+// Methode: Execute a SQL query and return a TRUE
+// @parameters: $sPdoQue type: string, scope: member
+function PdoSqlReturnTrue($sPdoQuery){
+    $DBconnect = connectToDB(); // Connect to the MySQL database
+    $statement = $DBconnect->prepare($sPdoQuery); // Make the query with the parameter
+    $result = $statement->execute(); // Put the results in the $result (look into this epdoExeption)
+    $DBconnect=NULL; // Close the connection
+    return(TRUE); // Return to the calling method
+}

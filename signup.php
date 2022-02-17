@@ -1,7 +1,6 @@
 <?php   
 include('Database._inc.php');
 include('Functions_inc.php');
-// bootstrap.php
 
 // ====start formhandeling==================
 if(!empty($_POST)){
@@ -12,10 +11,16 @@ $sEmail = checkpost('email');
 $ePassword = password_hash(checkpost('password'),PASSWORD_DEFAULT);
 
 //store the userdata to userdatabase
-$sql = "INSERT INTO `users`(`sUsername`,`sFirstname`,`sSurname`,`sEmail`,`ePassword`)";
-$sql ="VALUES("'.sUsername.'",)"
-
+$sql = "INSERT INTO `users`(`sUsername`,`sFirstname`,`sSurname`,`sEmail`,`ePassword`,`DateOfCreation`)";
+$sql ="VALUES('".$sUsername."','".$sFirstname."','".$sSurname."','".$sEmail."','".$ePassword."','Current_timestamp())";
+$bSucces= PdoSqlReturnTrue($sql);
+if($bSucces){
+    echo("data opgeslagen");
+}else{
+    echo ("Database error");
 }
+
+};
 
 
 
@@ -80,7 +85,7 @@ include('head.php');
                 <input type="text" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
-                <button type="button" class="btn btn-secondary btn-lg btn-block">create an account</button>
+                <button type="submit" class="btn btn-secondary btn-lg btn-block">create an account</button>
                 </div>
             </form>
             </div>
