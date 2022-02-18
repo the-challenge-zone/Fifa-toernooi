@@ -16,10 +16,10 @@
                             Tevens krijg ik ook de hulp van mijn klasgenoten van mijn klas.</br>
                             Ik krijg in dit project de hulp van mijn 2 assistent projectleiders en mijn werkgroepen. </br>
                         </p>
-                            <p>
-                                Ook zijn mijn docenten er voor de begeleiding van dit project.</br>
-                                Dus lijkt het je leuk om FIFA te Spelen DOE vooral mee!</br>
-                            </p>
+                    <p>
+                    Ook zijn mijn docenten er voor de begeleiding van dit project.</br>
+                    Dus lijkt het je leuk om FIFA te Spelen DOE vooral mee!</br>
+                    </p>
             </p>
             </div>
         </div>
