@@ -1,5 +1,5 @@
 <?php include('head.php')?>
-
+    
 <?php include('Footer.php')?>
 </html>
 
