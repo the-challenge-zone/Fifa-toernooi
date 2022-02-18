@@ -11,8 +11,8 @@ $sEmail = checkpost('email');
 $ePassword = password_hash(checkpost('password'),PASSWORD_DEFAULT);
 
 //store the userdata to userdatabase
-$sql = "INSERT INTO `users`(`sUsername`,`sFirstname`,`sSurname`,`sEmail`,`ePassword`,`DateOfCreation`)";
-$sql ="VALUES('".$sUsername."','".$sFirstname."','".$sSurname."','".$sEmail."','".$ePassword."','Current_timestamp())";
+$sql = "INSERT INTO `users`(`sUsername`,`sFirstname`,`sSurname`,`sEmail`,`ePassword`)";
+$sql ="VALUES('".$sUsername."','".$sFirstname."','".$sSurname."','".$sEmail."','".$ePassword.")";
 $bSucces= PdoSqlReturnTrue($sql);
 if($bSucces){
     echo("data opgeslagen");
