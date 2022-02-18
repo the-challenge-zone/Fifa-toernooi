@@ -4,22 +4,32 @@ include('Functions_inc.php');
 
 // ====start formhandeling==================
 if(!empty($_POST)){
-$sUsername = checkpost('username');
-$sFirstname = checkpost('firstname');
-$sSurname = checkpost('surname');
-$sEmail = checkpost('email');
-$ePassword = password_hash(checkpost('password'),PASSWORD_DEFAULT);
+    $conn = connectToDB();
 
-//store the userdata to userdatabase
-$sql = "INSERT INTO `users`(`sUsername`,`sFirstname`,`sSurname`,`sEmail`,`ePassword`)";
-$sql ="VALUES('".$sUsername."','".$sFirstname."','".$sSurname."','".$sEmail."','".$ePassword.")";
-$bSucces= PdoSqlReturnTrue($sql);
-if($bSucces){
-    echo("data opgeslagen");
-}else{
-    echo ("Database error");
-}
+    $sUsername = checkpost('username');
+    $sFirstname = checkpost('firstname');
+    $sSurname = checkpost('surname');
+    $sEmail = checkpost('email');
+    $ePassword = password_hash(checkpost('password'),PASSWORD_DEFAULT);
 
+    // Prepare the statement to prevent SQL injection
+    $sql = "INSERT INTO `users`(`sUsername`,`sFirstname`,`sSurname`,`sEmail`,`ePassword`)";
+    $sql .= "VALUES(?,?,?,?,?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([
+        $sUsername,
+        $sFirstname,
+        $sSurname,
+        $sEmail,
+        $ePassword
+    ]);
+
+    //$bSucces= PdoSqlReturnTrue($sql);
+    //if($bSucces) {
+        //echo("data opgeslagen");
+    //} else {
+        //echo ("Database error");
+    //}
 };
 //INSERT INTO `users` (`ID`, `sUsername`, `sFirstname`, `sSurname`, `sEmail`, `ePassword`, `DateOfCreation`) VALUES (NULL, 'test', 'test', 'test', 'test@test', 'test', current_timestamp());//
 
@@ -76,10 +86,10 @@ include('head.php');
                 <input type="text" class="form-control" name="username" placeholder="Username">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="firstname" placeholder="Full Name">
+                <input type="text" class="form-control" name="FullName" placeholder="Full Name">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="email" placeholder="Email">
+                <input type="text" class="form-control" name="Email" placeholder="Email">
                 </div>
                 <div class="form-group">
                 <input type="text" class="form-control" name="password" placeholder="Password">
