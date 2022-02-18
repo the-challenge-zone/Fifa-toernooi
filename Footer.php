@@ -13,7 +13,7 @@
     </br></br>
         <a href=""> <img width="5%" src="./Image/Link_Logo.PNG"> </a> 
         <a href=""> <img width='5%' src="./Image/Face_Logo.PNG"> </a>
-        
+        <a href=""> <img width='5%' src="./Image/Instagram-logo.png"> </a>
         
     </div>
 </footer>
