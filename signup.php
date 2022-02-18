@@ -70,7 +70,7 @@ include('head.php');
                 <input type="text" class="form-control" name="firstname" placeholder="firstName">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="surname" placeholder="SurName">
+                <input type="text" class="form-control" name="surname" placeholder="Surname">
                 </div>
                 <div class="form-group">
                 <input type="text" class="form-control" name="Email" placeholder="Email">
@@ -79,7 +79,7 @@ include('head.php');
                 <input type="text" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
-                <button type="submit" class="btn btn-secondary btn-lg btn-block">create an account</button>
+                <button type="submit" class="btn btn-secondary btn-lg btn-block">create a player</button>
                 </div>
             </form>
             </div>
