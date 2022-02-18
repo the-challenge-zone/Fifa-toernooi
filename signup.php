@@ -76,10 +76,10 @@ include('head.php');
                 <input type="text" class="form-control" name="username" placeholder="Username">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="FullName" placeholder="Full Name">
+                <input type="text" class="form-control" name="firstname" placeholder="Full Name">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="Email" placeholder="Email">
+                <input type="text" class="form-control" name="email" placeholder="Email">
                 </div>
                 <div class="form-group">
                 <input type="text" class="form-control" name="password" placeholder="Password">
