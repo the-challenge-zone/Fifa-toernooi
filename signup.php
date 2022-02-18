@@ -71,7 +71,7 @@ include('head.php');
                 <img src="./Image/user.png" alt="profile_img" height="140px" width="140px;">
             </div>
             <h3>Sign Up</h3>
-            <form>
+            <form method='post'>
                 <div class="form-group">
                 <input type="text" class="form-control" name="username" placeholder="Username">
                 </div>
