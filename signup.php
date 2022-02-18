@@ -9,7 +9,7 @@ if(!empty($_POST)){
     $sUsername = checkpost('username');
     $sFirstname = checkpost('firstname');
     $sSurname = checkpost('surname');
-    $sEmail = checkpost('email');
+    $sEmail = checkpost('Email');
     $ePassword = password_hash(checkpost('password'),PASSWORD_DEFAULT);
 
     // Prepare the statement to prevent SQL injection
@@ -23,28 +23,9 @@ if(!empty($_POST)){
         $sEmail,
         $ePassword
     ]);
-
-    //$bSucces= PdoSqlReturnTrue($sql);
-    //if($bSucces) {
-        //echo("data opgeslagen");
-    //} else {
-        //echo ("Database error");
-    //}
 };
-//INSERT INTO `users` (`ID`, `sUsername`, `sFirstname`, `sSurname`, `sEmail`, `ePassword`, `DateOfCreation`) VALUES (NULL, 'test', 'test', 'test', 'test@test', 'test', current_timestamp());//
-
-
-
-
 //+++++++++++++++++++header VVVVVV+++++++++++++++++++++++//
 include('head.php');
-
-
-
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,7 +67,10 @@ include('head.php');
                 <input type="text" class="form-control" name="username" placeholder="Username">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="FullName" placeholder="Full Name">
+                <input type="text" class="form-control" name="firstname" placeholder="firstName">
+                </div>
+                <div class="form-group">
+                <input type="text" class="form-control" name="surname" placeholder="SurName">
                 </div>
                 <div class="form-group">
                 <input type="text" class="form-control" name="Email" placeholder="Email">
