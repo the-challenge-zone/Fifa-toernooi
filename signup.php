@@ -2,33 +2,30 @@
 include('Database._inc.php');
 include('Functions_inc.php');
 
-
 // ====start formhandeling==================
 if(!empty($_POST)){
-$sUsername = checkpost('username');
-$sFirstname = checkpost('firstname');
-$sSurname = checkpost('surname');
-$sEmail = checkpost('email');
-$ePassword = password_hash(checkpost('password'),PASSWORD_DEFAULT);
+    $conn = connectToDB();
 
-//store the userdata to userdatabase
-$sql = "INSERT INTO `users`(`ID`,`sUsername`)";
+    $sUsername = checkpost('username');
+    $sFirstname = checkpost('firstname');
+    $sSurname = checkpost('surname');
+    $sEmail = checkpost('Email');
+    $ePassword = password_hash(checkpost('password'),PASSWORD_DEFAULT);
 
-}
-
-
-
-
-
+    // Prepare the statement to prevent SQL injection
+    $sql = "INSERT INTO `users`(`sUsername`,`sFirstname`,`sSurname`,`sEmail`,`ePassword`)";
+    $sql .= "VALUES(?,?,?,?,?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([
+        $sUsername,
+        $sFirstname,
+        $sSurname,
+        $sEmail,
+        $ePassword
+    ]);
+};
 //+++++++++++++++++++header VVVVVV+++++++++++++++++++++++//
 include('head.php');
-
-
-
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,12 +62,15 @@ include('head.php');
                 <img src="./Image/user.png" alt="profile_img" height="140px" width="140px;">
             </div>
             <h3>Sign Up</h3>
-            <form>
+            <form method='post'>
                 <div class="form-group">
                 <input type="text" class="form-control" name="username" placeholder="Username">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="FullName" placeholder="Full Name">
+                <input type="text" class="form-control" name="firstname" placeholder="firstName">
+                </div>
+                <div class="form-group">
+                <input type="text" class="form-control" name="surname" placeholder="SurName">
                 </div>
                 <div class="form-group">
                 <input type="text" class="form-control" name="Email" placeholder="Email">
@@ -79,7 +79,7 @@ include('head.php');
                 <input type="text" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
-                <button type="button" class="btn btn-secondary btn-lg btn-block">create an account</button>
+                <button type="submit" class="btn btn-secondary btn-lg btn-block">create an account</button>
                 </div>
             </form>
             </div>
