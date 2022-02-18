@@ -1,6 +1,31 @@
 <?php   
 include('Database._inc.php');
+include('.\Functions_inc.php');
 include('head.php');
+
+if(!empty($_POST)){
+    // Get the input from the user
+    $sUsername = checkpost('sUsername');
+    $sPassword = checkpost('sPassword');
+    //var_dump($_POST);
+    // Load the database array from file
+    $sql ="SELECT * FROM `users`";
+    $aFromDatabaseArray = PdoSqlReturnArray($sql);
+    $aFromDatabaseArray = PdoSqlReturnArray($sql);
+   // $aDatabase = readArray();
+    // Loop thru the database
+    foreach($aFromDatabaseArray as $aRecord){
+        // Check if the given username and password are the same as the one in the database
+        //if(($sUsername == $aRecord['sEmail'])&&(password_verify($sPassword,$aRecord['sPassword']))){
+           // If true, go to the listing page
+            $_SESSION['accessGranted'] = 'TRUE';            
+            header('location: ./');
+            //} // End if
+        } // End foreach
+        echo("<font style='color:red;'>Ongeldige gebruikersnaam en/of wachtwoord.</font>");
+    }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +62,7 @@ include('head.php');
                 <img src="./Image/user.png" alt="profile_img" height="140px" width="140px;">
             </div>
             <h3>Login</h3>
-            <form>
+            <form method='post'>
                 <div class="form-group">
                 <input type="text" class="form-control" name="username" placeholder="Username">
                 </div>
@@ -45,7 +70,7 @@ include('head.php');
                 <input type="text" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
-                <button type="button" class="btn btn-secondary btn-lg btn-block">Login</button>
+                <button type="submit" class="btn btn-secondary btn-lg btn-block">Login</button>
                 </div>
                 <div class="form-group Signup">
                     <a href="./signup.php">Sign Up</a>
