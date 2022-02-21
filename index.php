@@ -1,5 +1,13 @@
 <?php include('head.php')?>
+
+<div class="background">
+  <div class="transbox">
+    <p>This is some text that is placed in the transparent box.</p>
+  </div>
+</div>
     
+
+
 <?php include('Footer.php')?>
 </html>
 
