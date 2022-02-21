@@ -1,9 +1,14 @@
 <?php
-
+    
 ?>
-
+<style>
+@import "./CSS/stylesheet.css";
+footer{
+	background-color: #b56bdc;
+};
+</style>
     <!--Footer-->
-<footer>
+<footer class="footer">
     <div class="col-md-6">  
         <p>
        
