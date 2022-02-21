@@ -2,17 +2,16 @@
 include('Database._inc.php');
 include('Functions_inc.php');
 
-// ====start formhandeling==================
+// ====start formhandeling==================//
 if(!empty($_POST)){
     $conn = connectToDB();
-
+     // Get the input from the user//
     $sUsername = checkpost('username');
     $sFirstname = checkpost('firstname');
     $sSurname = checkpost('surname');
     $sEmail = checkpost('Email');
     $ePassword = password_hash(checkpost('password'),PASSWORD_DEFAULT);
-
-    // Prepare the statement to prevent SQL injection
+    // Prepare the statement to prevent SQL injection//
     $sql = "INSERT INTO `users`(`sUsername`,`sFirstname`,`sSurname`,`sEmail`,`ePassword`)";
     $sql .= "VALUES(?,?,?,?,?)";
     $stmt = $conn->prepare($sql);
@@ -24,7 +23,7 @@ if(!empty($_POST)){
         $ePassword
     ]);
 };
-//+++++++++++++++++++header VVVVVV+++++++++++++++++++++++//
+//+++++++++++++++++++header+++++++++++++++++++++++//
 include('head.php');
 ?>
 <!DOCTYPE html>
