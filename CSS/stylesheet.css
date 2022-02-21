@@ -301,7 +301,8 @@ a{
 /*homepage*/
 
 div.background {
-	background-image: url(/Image/Logo.jpg);
+	background-image: url(../Image/Logo.jpg);
+	size: 100%;
 	border: 2px solid black;
   }
   
