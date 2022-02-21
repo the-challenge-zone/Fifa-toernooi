@@ -64,10 +64,12 @@ if(!empty($_POST)){
             <h3>Login</h3>
             <form method='post'>
                 <div class="form-group">
-                <input type="text" class="form-control" name="username" placeholder="Username">
+                <label for="username-field">Username</label>
+                <input id="username-field" type="text" class="form-control" name="username">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="password" placeholder="Password">
+                <label for="password-field">Password</label>
+                <input id="password-field" type="text" class="form-control" name="password">
                 </div>
                 <div class="form-group">
                 <button type="submit" class="btn btn-secondary btn-lg btn-block">Login</button>

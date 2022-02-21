@@ -64,19 +64,24 @@ include('head.php');
             <h3>Sign Up</h3>
             <form method='post'>
                 <div class="form-group">
-                <input type="text" class="form-control" name="username" placeholder="Username">
+                <label for="username-field">Userame</label>
+                <input id="username-field" type="text" class="form-control" name="username">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="firstname" placeholder="firstName">
+                <label for="firstname-field">First Name</label>
+                <input id="firstname-field" type="text" class="form-control" name="firstname">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="surname" placeholder="Surname">
+                <label for="surname-field">Surname</label>
+                <input id="surname-field" type="text" class="form-control" name="surname">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="Email" placeholder="Email">
+                <label for="email-field">E-mail</label>
+                <input id="email-field" type="text" class="form-control" name="Email">
                 </div>
                 <div class="form-group">
-                <input type="text" class="form-control" name="password" placeholder="Password">
+                <label for="password-field">Password</label>
+                <input id="password-field" type="text" class="form-control" name="password">
                 </div>
                 <div class="form-group">
                 <button type="submit" class="btn btn-secondary btn-lg btn-block">create a player</button>

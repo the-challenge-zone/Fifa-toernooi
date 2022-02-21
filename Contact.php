@@ -17,19 +17,24 @@
                                 <form method="post" action="sendemail.php" id="contact-form">
                                     <div class="row clearfix">
                                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                                            <input type="text" name="name" value="" placeholder="Name" required>
+                                            <label for="name-field">Name</label>
+                                            <input id="name-field" type="text" name="name" value="" required>
                                         </div>
                                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                                            <input type="email" name="email" value="" placeholder="Email" required>
+                                        <label for="email-field">E-mail</label>
+                                            <input id="email-field" type="email" name="email" value="" required>
                                         </div>
                                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                                            <input type="text" name="subject" value="" placeholder="Subject" required>
+                                        <label for="subject-field">Subject</label>
+                                            <input id="subject-field" type="text" name="subject" value="" required>
                                         </div>
                                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
-                                            <input type="text" name="phone" value="" placeholder="Phone" required>
+                                        <label for="phone-field">Phone number</label>
+                                            <input id="phone-field" type="text" name="phone" value="" required>
                                         </div>
                                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
-                                            <textarea name="message" placeholder="Message"></textarea>
+                                        <label for="message-field">Message</label>
+                                            <textarea id="message-field" name="message"></textarea>
                                         </div>
                                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
                                             <button type="submit" class="theme-btn btn-style-one">Send Now</button>
